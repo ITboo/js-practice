@@ -1,0 +1,111 @@
+:root {
+    --main-color: purple;
+    --second-color: #5bceae;
+    --text-color: black;
+    --title-color: white;
+    --title-shadow: black;
+    --error: red;
+    --shadow: lightgray;
+    --background: white;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+main {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    background: linear-gradient(30deg, var(--main-color), var(--second-color));
+    border-radius: 4rem;
+    box-shadow: 0 2px 2px var(--shadow);
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: var(--title-color);
+    text-shadow: 5px 5px 10px var(--title-shadow);
+}
+.error{
+    display: none;
+    font-weight: bold;
+    color: var(--error);
+}
+
+.section {
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    background-color: var(--background) ;
+    font-size: 1.8rem;
+    box-shadow: inset 0 2px 2px var(--shadow);
+}
+
+section>div {
+    padding: 1.6rem 0;
+}
+
+.bill {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+}
+
+input[type='number'] {
+    padding: 0.8rem 0 0.8rem 1rem;
+    background: var(--background);
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    box-shadow: inset 0 2px 2px var(--shadow);
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    margin-top: 1.2rem;
+    background: #eee;
+    border-radius: 0.3rem;
+    outline-color: var(--main-color);
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: 0;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.range::-moz-focus-outer {
+    border: 0;
+}
